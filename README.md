@@ -51,3 +51,8 @@ rm -rf app
 # copy your app over
 cp -R ../my-old-remix-app/app app
 ```
+
+# Prisma
+For pushing prisma schema to your database - `npx prisma migrate dev --name init`
+
+For creating prisma schema from existing database schema `npx prisma introspect --force`
