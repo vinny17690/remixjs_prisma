@@ -19,13 +19,14 @@ model Users {
 }
 
 model Posts {
-  id         Int      @id @default(autoincrement())
-  title      String
-  post       String   @db.LongText
-  created_at DateTime @default(now())
-  updated_at DateTime @updatedAt
-  user       Users    @relation(fields: [user_id], references: [id])
-  user_id    Int
+  id          Int      @id @default(autoincrement())
+  title       String
+  post        String   @db.LongText
+  created_at  DateTime @default(now())
+  updated_at  DateTime @updatedAt
+  user        Users    @relation(fields: [user_id], references: [id])
+  user_id     Int
+  post_status String   @default("draft")
 
   @@map(name: "posts")
 }

@@ -56,3 +56,5 @@ cp -R ../my-old-remix-app/app app
 For pushing prisma schema to your database - `npx prisma migrate dev --name init`
 
 For creating prisma schema from existing database schema `npx prisma introspect --force`
+
+Use `npx prisma studio` to get GUI for adding/updating database records
