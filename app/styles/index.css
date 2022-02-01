@@ -1,3 +1,23 @@
-.container {
-	background: tomato;
+html, body {
+	box-sizing: border-box;
+	font-family: 'Montserrat';
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.nav-link {
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin: 0 1rem;
+	text-decoration: none;
+	text-transform: uppercase;
 }

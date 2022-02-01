@@ -4,7 +4,12 @@ import type { Posts } from '@prisma/client';
 import { db } from '../utils/db.server';
 import stylesUrl from '../styles/index.css';
 
-export const links: LinksFunction = () => [{ rel: 'stylesheet', href: stylesUrl }];
+export const links: LinksFunction = () => [
+	{ rel: 'stylesheet', href: stylesUrl },
+	{ rel: 'stylesheet', href: 'https://fonts.googleapis.com' },
+	{ rel: 'preconnect', href: 'https://fonts.gstatic.com' },
+	{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap' },
+];
 
 export const loader: LoaderFunction = async () => {
 	const allPosts: Array<Posts> = await db.posts.findMany();
@@ -20,7 +25,7 @@ export default function Index() {
 	const posts = useLoaderData();
 
 	return (
-		<>
+		<div>
 			{ posts.length && posts.map((post: Posts) => (
 				<div key={post.id} className="container">
 					<Link to={`/post/${post.id}`}>{post.title}</Link>
@@ -28,6 +33,6 @@ export default function Index() {
 					<p>{post.post}</p>
 				</div>
 			)) }
-		</>
+		</div>
 	);
 }

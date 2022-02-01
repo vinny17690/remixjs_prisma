@@ -17,8 +17,9 @@ const Header: FC = () => (
 				{Object.entries(links).map(([key, value]) => (
 					<li>
 						<NavLink
+							className="nav-link"
 							style={({ isActive }) => (isActive ? activeStyle : undefined)}
-							to={`/${key}`}
+							to={key === 'home' ? '/' : `/${key}`}
 						>
 							{value}
 						</NavLink>
