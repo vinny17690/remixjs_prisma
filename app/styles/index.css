@@ -1,8 +1,13 @@
 html, body {
+	background: #333;
 	box-sizing: border-box;
 	font-family: 'Montserrat';
 	margin: 0;
 	padding: 0;
+}
+
+nav {
+	margin: 2rem auto;
 }
 
 ul {
@@ -15,9 +20,43 @@ ul {
 }
 
 .nav-link {
+	color: white;
 	font-size: 1.2rem;
-	font-weight: bold;
+	font-weight: 600;
+	letter-spacing: 2px;
 	margin: 0 1rem;
 	text-decoration: none;
 	text-transform: uppercase;
+}
+
+.post-container {
+	background: #f2f2f2;
+	border-radius: 1rem;
+	margin: 1rem;
+	padding: 2rem;
+}
+
+.post-title {
+	color: #333;
+	font-size: 2rem;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.post-title:hover {
+	color: #AD1457;
+	text-decoration: underline;
+}
+
+.post-status {
+	display: block;
+	font-size: 0.7rem;
+	letter-spacing: 1px;
+	opacity: 0.7;
+	margin-top: 0.75rem;
+	text-transform: uppercase;
+}
+
+.post-content {
+	letter-spacing: 0.5px;
 }
