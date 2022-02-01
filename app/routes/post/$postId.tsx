@@ -22,10 +22,10 @@ export const loader: LoaderFunction = async ({ params }) => {
 export default function PostId() {
 	const post = useLoaderData<Posts>();
 	return (
-		<div key={post.id}>
-			<Link to={`/post/${post.id}`}>{post.title}</Link>
-			<span>{post.post_status}</span>
-			<p>{post.post}</p>
+		<div key={post.id} className="post-container">
+			<Link className="post-title" to={`/post/${post.id}`}>{post.title}</Link>
+			<span className="post-status">{post.post_status}</span>
+			<p className="post-content">{post.post}</p>
 		</div>
 	);
 }
