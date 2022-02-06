@@ -22,7 +22,7 @@ export default function Index() {
 				<div key={post.id} className="post-container">
 					<Link className="post-title" to={`/post/${post.id}/`}>{post.title}</Link>
 					<span className="post-status">{post.post_status}</span>
-					<p className="post-content">{post.post}</p>
+					<p className="post-content">{`${post.post.slice(0, 200)}...`}</p>
 				</div>
 			)) }
 		</div>

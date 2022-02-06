@@ -1,8 +1,15 @@
+:root {
+	--bg-color: #F2F2F2;
+	--font-color: #333333;
+	--font-accent-color: #AD1457;
+}
+
 html, body {
 	background: #333;
 	box-sizing: border-box;
 	font-family: 'Montserrat';
-	margin: 0;
+	max-width: 1300px;
+	margin: 0 auto;
 	padding: 0;
 }
 
@@ -20,7 +27,7 @@ ul {
 }
 
 .nav-link {
-	color: white;
+	color: var(--bg-color);
 	font-size: 1.2rem;
 	font-weight: 600;
 	letter-spacing: 2px;
@@ -30,21 +37,21 @@ ul {
 }
 
 .post-container {
-	background: #f2f2f2;
+	background: var(--bg-color);
 	border-radius: 1rem;
 	margin: 1rem;
 	padding: 2rem;
 }
 
 .post-title {
-	color: #333;
+	color: var(--font-color);
 	font-size: 2rem;
 	font-weight: bold;
 	text-decoration: none;
 }
 
 .post-title:hover {
-	color: #AD1457;
+	color: var(--font-accent-color);
 }
 
 .post-status {
@@ -58,4 +65,26 @@ ul {
 
 .post-content {
 	letter-spacing: 0.5px;
+}
+
+.post-meta-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.edit-button {
+	align-self: center;
+}
+
+.edit-button a {
+	background: var(--font-color);
+	border-radius: 0.3rem;
+	color: var(--bg-color);
+	padding: 1rem 2rem;
+	text-decoration: none;
+	transition: 0.2s background ease-in;
+}
+
+.edit-button a:hover {
+	background: var(--font-accent-color);
 }
