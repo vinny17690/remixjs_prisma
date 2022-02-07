@@ -55,5 +55,7 @@ module.exports = {
 		'react/static-property-placement': ['warn', 'static public field'], // `static public field` enabled
 		'react/jsx-props-no-spreading': 0,
 		'import/prefer-default-export': 'off',
+		camelcase: 'off',
+		'prefer-const': 'off',
 	},
 };

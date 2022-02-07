@@ -88,3 +88,7 @@ ul {
 .edit-button a:hover {
 	background: var(--font-accent-color);
 }
+
+label {
+	color: var(--bg-color);
+}
