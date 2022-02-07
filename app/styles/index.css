@@ -8,6 +8,7 @@ html, body {
 	background: #333;
 	box-sizing: border-box;
 	font-family: 'Montserrat';
+	letter-spacing: 0.5px;
 	max-width: 1300px;
 	margin: 0 auto;
 	padding: 0;
@@ -89,6 +90,66 @@ ul {
 	background: var(--font-accent-color);
 }
 
+
+/* Form Styles */
+
+form {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+form > div {
+	display: flex;
+	justify-content: flex-start;
+	margin: 1rem auto;
+}
+
 label {
 	color: var(--bg-color);
+	margin-right: 1rem;
+}
+
+.submit-button {
+	background: var(--font-accent-color);
+	border: none;
+	border-radius: 0.3rem;
+	color: var(--bg-color);
+	cursor: pointer;
+	letter-spacing: 0.5px;
+	padding: 1rem 2rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: 0.2s background ease-in;
+}
+
+.submit-button:hover {
+	background-color: var(--bg-color);
+	color: var(--font-accent-color);
+}
+
+.post-title-container > label {
+	padding-right: 2rem;
+}
+
+.post-status-container > label {
+	padding-right: 0.8rem;
+}
+
+.post-submit-container {
+	margin: 3rem 2rem 0;
+	justify-content: flex-end;
+}
+
+input, textarea {
+	background: var(--bg-color);
+	border: none;
+	border-radius: 0.2rem;
+	padding: 1rem;
+}
+
+select {
+	background: var(--bg-color);
+	border: none;
+	padding: 0.75rem;
+	text-transform: uppercase;
 }
