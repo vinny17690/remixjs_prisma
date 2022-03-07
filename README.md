@@ -1,4 +1,4 @@
-# Welcome to Remix! Docs updated!! (March 7th 11:01 AM)
+# Welcome to Remix! Docs updated!! (March 7th, 2022 - 11:01 AM)
 
 - [Remix Docs](https://remix.run/docs)
 
